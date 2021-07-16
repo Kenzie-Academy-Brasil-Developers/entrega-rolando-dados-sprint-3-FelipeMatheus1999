@@ -1,0 +1,42 @@
+body {
+    background: rgb(60, 122, 204);
+}
+
+.root {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.root__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.graphic {
+    background: linear-gradient(#3E5151, #decba4);
+    width: 90%;
+    height: 230px;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div:not(.graphic) {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px 5px 0 0;
+}
+
+@media(min-width: 768px) {
+    .graphic {
+        width: 500px;
+    }
+}
